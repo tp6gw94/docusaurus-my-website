@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --ifm-color-primary: #2f2e85;
+  --ifm-color-primary-dark: #2a2978;
+  --ifm-color-primary-darker: #282771;
+  --ifm-color-primary-darkest: #21205d;
+  --ifm-color-primary-light: #343392;
+  --ifm-color-primary-lighter: #363599;
+  --ifm-color-primary-lightest: #3d3cad;
+  --ifm-font-family-base: 'Noto Sans TC', system-ui, -apple-system, Segoe UI,  Roboto, sans-serif;
+  --ifm-font-family-monospace: SFMono-Regular,  'Noto Sans TC', Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace, sans-serif;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #c1bc25;
+  --ifm-color-primary-dark: #aea921;
+  --ifm-color-primary-darker: #a4a01f;
+  --ifm-color-primary-darkest: #87841a;
+  --ifm-color-primary-light: #d4cf29;
+  --ifm-color-primary-lighter: #d8d231;
+  --ifm-color-primary-lightest: #ddd84e;
+  --ifm-background-color: #000000;
+}
