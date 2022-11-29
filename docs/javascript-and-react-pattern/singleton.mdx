@@ -1,0 +1,66 @@
+---
+title: Singleton Pattern
+---
+只建立一個 class 的 instance，instance 可以在全局的應用程式被訪問，但是無法被修改。 
+
+例如
+
+```ts title="Counter.ts"
+let instance: Counter;
+
+class Counter {
+  public counter: number;
+  constructor() {
+    if (instance) {
+      throw new Error("已建立 Instance");
+    }
+    this.counter = 0;
+    instance = this;
+  }
+
+  getCount() {
+    return this.counter;
+  }
+
+  increment() {
+    return ++this.counter;
+  }
+
+  decrement() {
+    return --this.counter;
+  }
+}
+
+const counter = Object.seal(new Counter());
+
+try {
+  const counter2 = Object.seal(new Counter());
+} catch (e) {
+  console.log(e); // error 已建立 Instance
+}
+
+export default counter;
+```
+:::note Note
+[`Object.seal()` vs `Object.freeze()`](https://blog.logrocket.com/javascript-object-immutability-object-freeze-vs-object-seal/)
+:::
+
+在其他的地方使用會是相同的 instance。
+
+```ts title="index.ts"
+import counter from "./Counter";
+
+console.log(counter.increment()); // 1
+console.log(counter.increment()); // 2
+```
+
+```ts title="orther.ts"
+import counter from "./Counter";
+
+console.log(counter.increment()); // 3
+```
+
+[sandbox link](https://codesandbox.io/s/fervent-ully-ip8r0w?file=/src/orther.ts)
+
+## Reference
+- [https://javascriptpatterns.vercel.app/patterns/design-patterns/singleton-pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/singleton-pattern)

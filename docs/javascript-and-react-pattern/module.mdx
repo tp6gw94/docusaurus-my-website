@@ -1,0 +1,52 @@
+---
+title: Module Pattern
+---
+
+在 ES2015 之前 JS 都是採用 implied global，所以在之前的 JS 中沒有 module 的概念，但是在 ES2015 之後，JS 有了 module 的概念，我們可以使用 import 和 export 來實現模組化。
+
+implied global 的例子，可以直接從 global 獲取變數或是 function。
+
+<stackblitz id="web-platform-yswx8w" options={{
+    devToolsHeight: 33, 
+    openFile: 'index.html',
+    forceEmbedLayout: true
+  }}
+/>
+
+有了 module 之後，就可以將 code 拆分出來，讓 code 更容易維護。並且可以有各自的 private variable，也不會污染到 global。
+
+NodeJS module
+<stackblitz 
+  id="node-acl7m7"
+  options={{
+    openFile: 'index.js',
+    hideNavigation: true,
+    hideExplorer: false
+  }}
+/>
+
+Browser module
+<stackblitz
+  id="web-platform-phoc6p"
+  options={{
+    openFile: 'index.js',
+    hideNavigation: true,
+    hideExplorer: false
+  }}
+/>
+
+透過 module pattern 可以實現 Encapsulation(封裝) 和 Reusability
+
+:::info INFO
+
+Encapsulation: 值、function 等的 scope 只會在 module 內，外部的 module 皆無法獲取。
+
+:::
+
+:::info INFO
+Reusability: 重複使用 module
+:::
+
+
+## Reference
+- [https://javascriptpatterns.vercel.app/patterns/design-patterns/module-pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/module-pattern)
