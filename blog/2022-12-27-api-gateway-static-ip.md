@@ -1,7 +1,7 @@
 ---
 title: AWS API Gateway Static IP
 tags: [AWS, API Gateway, Lambda, Serverless, Work]
-isDraft: true
+draft: true
 ---
 在工作上遇到了第三方服務請求時，需要設定白名單 IP，但目前的架構使用 AWS 的API Gatewaty + Lambda 進行， 而在 API Gateway 都是浮動的 IP，也無法設定 Elastic IP，查了很多的資料都必須使用繞過的方式進行。
 
