@@ -1,0 +1,4 @@
+---
+title: {{title}}
+draft: true
+---

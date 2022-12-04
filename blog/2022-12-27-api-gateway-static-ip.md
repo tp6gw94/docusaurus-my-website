@@ -16,6 +16,7 @@ Global Accelerator，不過 Global Accelerator 的價格過於高昂，並無法
 
 ![](../static/api%20gateway%20static%20ip-原本的架構%201.png)
 
+## 建立 API Gateway 與 Lambda
 
 
 ## Reference

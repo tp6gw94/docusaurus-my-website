@@ -1,6 +1,6 @@
 ---
 title: Singleton Pattern
-draft: true
+sidebar_position: 2
 ---
 只建立一個 class 的 instance，instance 可以在全局的應用程式被訪問，但是無法被修改。
 
@@ -62,6 +62,14 @@ console.log(counter.increment()); // 3
 ```
 
 [sandbox link](https://codesandbox.io/s/fervent-ully-ip8r0w?file=/src/orther.ts)
+
+singleton pattern 可以節省 Memory 空間，因爲只使用一個 instance，並不會重覆的創建。
+
+不過使用 singleton pattern 會導致全局環境的污染，對於測試也會比較麻煩，因爲都是同一個 instance 所以每次測試都必須重置 instance，以便繼續進行測試。
+
+在使用 singleton pattern 時，導入該 module 並不會知道此 module 是 singleton，所以可能會有出乎意料的結果。
+
+在 ES2015 使用 module 預設已經是不可編輯了，並不需要特別的去使用此 pattern。
 
 ## Reference
 - [https://javascriptpatterns.vercel.app/patterns/design-patterns/singleton-pattern](https://javascriptpatterns.vercel.app/patterns/design-patterns/singleton-pattern)
