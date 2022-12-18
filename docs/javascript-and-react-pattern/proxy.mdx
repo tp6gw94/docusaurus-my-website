@@ -5,7 +5,6 @@ sidebar_position: 3
 JS 有內建的 [Proxy](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Proxy) Object 可以使用，在操作 Object 內的屬性會透過多一層的 Proxy 來進行。
 
 原先是直接取用與更新
-
 ![](../../static/JS%20pattern-proxy.png)
 
 使用 Proxy 後會透過 Proxy 進行操作
@@ -29,3 +28,6 @@ JS 有內建的 [Proxy](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/
 />
 
 使用 Proxy 可以實現 validation 、formatting或是 debug 等，不過若是 proxy 的 handler function 執行時間過長可能會造成**效能的問題**。
+
+## Reference
+- https://javascriptpatterns.vercel.app/patterns/design-patterns/proxy-pattern

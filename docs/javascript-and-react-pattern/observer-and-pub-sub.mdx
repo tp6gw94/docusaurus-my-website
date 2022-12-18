@@ -1,0 +1,32 @@
+---
+title: Observer & Pub/Sub Pattern
+sidebar_position: 4
+---
+
+可以透過觀察者模式發現 Subject event 發生時，通知其它 Observer。
+
+![](../../static/JS%20pattern-Observer.png)
+
+Pub/Sub pattern 類似，透過 publisher 發送訊息，subscriber 訂閱後會收到 publish 的訊息，比較不同的事 publisher 與 subscriber 彼此並不會知道彼此的存在，而是透過 broker 或是 queues 進行溝通。
+
+![](../../static/JS%20pattern-pub-sub.drawio.png)
+
+通常 Pub/Sub 會是採用非同步的方式，常用於跨應用程式之間的溝通。
+
+Observer Pattern 採用同步的方式，並實作在相同的應用程式上。
+
+使用此 Pattern 可以達到關注點分離的好處，不過需要注意若有許多的 observer 需要進行通知的話，可能會造成效能的問題。
+
+<stackblitz
+  id="js-biefb2"
+  options={{
+    devToolsHeight: 33,
+    openFile: 'observer.js',
+    forceEmbedLayout: true,
+  }}
+/>
+
+## Reference
+
+- https://betterprogramming.pub/observer-vs-pub-sub-pattern-50d3b27f838c
+- https://javascriptpatterns.vercel.app/patterns/design-patterns/observer-pattern
