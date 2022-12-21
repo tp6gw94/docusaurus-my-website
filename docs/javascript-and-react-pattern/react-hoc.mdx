@@ -1,0 +1,45 @@
+---
+title: Higher Order Component
+sidebar_position: 6
+---
+
+透過 HOC 將 Component 包裝，可以讓邏輯的傳遞更爲簡單，達成關注點分離。
+
+<stackblitz
+  id="react-ts-efg5k9"
+  options={{
+    devToolsHeight: 33,
+    openFile: 'hoc/withLoader.tsx',
+    forceEmbedLayout: true,
+  }}
+/>
+
+使用 HOC 時，需要注意是否會覆蓋到原本的 Props。
+
+```ts title="hoc.tsx"
+function withStyles(Component) {
+  return (props) => {
+    const style = {
+      padding: '0.2rem',
+      margin: '1rem',
+    };
+    return <Component style={style} />;
+  };
+}
+```
+
+```ts title="Btn.tsx"
+const Button = () => <button style={{ color: 'red' }}>Btn</button>;
+withStyles(Button); // overwrite btn style
+```
+
+若是一個 Component 同時被許多的 HOC 包裝的話，會變得難以 Debug。
+
+```ts title="hoc.tsx"
+...
+withLoader(withAuth(withStyles(...)))
+```
+
+## Reference
+
+- https://javascriptpatterns.vercel.app/patterns/react-patterns/higher-order-component
