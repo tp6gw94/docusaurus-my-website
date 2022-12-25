@@ -14,7 +14,7 @@ sidebar_position: 6
   }}
 />
 
-使用 HOC 時，需要注意是否會覆蓋到原本的 Props。
+使用 HOC 時，需要注意是否會覆蓋到 Implicit Props
 
 ```ts title="hoc.tsx"
 function withStyles(Component) {
@@ -30,7 +30,7 @@ function withStyles(Component) {
 
 ```ts title="Btn.tsx"
 const Button = () => <button style={{ color: 'red' }}>Btn</button>;
-withStyles(Button); // overwrite btn style
+withStyles(Button); // overwrite style
 ```
 
 若是一個 Component 同時被許多的 HOC 包裝的話，會變得難以 Debug。
