@@ -1,6 +1,8 @@
 ---
 title: 2022 回顧與展望
 ---
+![](../static/enhanced-c747f67f-8466-46ac-bd62-f4e64632ba30.png)
+
 ## 工作
 
 在前年(2020)的 12 月進入目前的公司，已經待了一年又一個月，是我進入的第二間新創公司。
@@ -39,7 +41,7 @@ Redux 原本只使用了 [React Redux](https://react-redux.js.org/)，但是在�
 
 一開始嘗試使用了別人配置的 [LunarVim](https://github.com/LunarVim/LunarVim) 、 [SpaceVim](https://spacevim.org/)、[AstroNvim](https://github.com/AstroNvim/AstroNvim) 等，不過最後還是使用自己的[neovim 配置](https://github.com/tp6gw94/dotconfig/tree/main/nvim)比較符合自身的使用。
 
-搭配 Terminal multiplexer 與 neovim，原本使用了 [tmux](https://github.com/tmux/tmux) 加上 [oh-my-tmux](https://github.com/gpakosz/.tmux)，不過不太習慣 tmux 的 keymap，後來改使用了 [zellij](https://github.com/zellij-org/zellij) 和自身的[配置](https://github.com/tp6gw94/dotconfig/tree/main/zellij)。
+Terminal multiplexer 原本使用了 [tmux](https://github.com/tmux/tmux) 加上 [oh-my-tmux](https://github.com/gpakosz/.tmux)，不過不太習慣 tmux 的 keymap，後來改使用了 [zellij](https://github.com/zellij-org/zellij) 和自身的[配置](https://github.com/tp6gw94/dotconfig/tree/main/zellij)。
 
 目前的工作的 terminal 使用 [iterm2](https://iterm2.com/)，本來有嘗試使用其它的 terminal([alacritty](https://github.com/alacritty/alacritty)、[kitty](https://sw.kovidgoyal.net/kitty/#))，目前習慣使用 [fig](https://fig.io/) 來獲取指令的 autocomplete， 但是 fig 除了 iterm2 其它 terminal 都不太支援，常常提示莫名跳不出來或是跑到奇怪的位置，原本以爲是我使用 fish shell 的關係，不過換回 iterm2 就正常了，所以應該是尚未支援其它的 terminal 吧。
 
