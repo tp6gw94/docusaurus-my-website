@@ -135,6 +135,7 @@ docReady(() => {
  }
 })
 ```
+
 ![](../../static/image-20230118202728360.png)
 
 
@@ -159,6 +160,7 @@ docReady(() => {
 2. 降低圖片不必要的 quality 並移除圖片的 metadata 等，減少圖片的 size 
 
    例如使用 [tinypng](https://tinypng.com/) 降低 quality
+   
 	![](../../static/image-20230118202916667.png)
 
 ##### Reduce Overhead
@@ -170,14 +172,13 @@ docReady(() => {
 
 	[![](https://mermaid.ink/img/pako:eNo1j8sKgzAQRX8lzLr-QArd1O6kiCl0k01qRg00E5vHooj_3kHtZjhzuMxjgT5YBAljNPMkmu6sKZXX3j0nJDG4mLLIzqOm-q6q6vK4tpxCspoYWSjVsODK3OGnYMrcH7S5NAdKuMkd2bYx9JiSo5E9nMBj9MZZvmXRJISGPCEvBck4hMijNGhaOVlmazLerMshghzMO-EJTMlBfakHmWPBf6h2hn_xR2r9AZ4YUy0)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNo1j8sKgzAQRX8lzLr-QArd1O6kiCl0k01qRg00E5vHooj_3kHtZjhzuMxjgT5YBAljNPMkmu6sKZXX3j0nJDG4mLLIzqOm-q6q6vK4tpxCspoYWSjVsODK3OGnYMrcH7S5NAdKuMkd2bYx9JiSo5E9nMBj9MZZvmXRJISGPCEvBck4hMijNGhaOVlmazLerMshghzMO-EJTMlBfakHmWPBf6h2hn_xR2r9AZ4YUy0)
 
-
 	[![](https://mermaid.ink/img/pako:eNo1jjsOgzAQRK-CtoYLGClNko4C4ZTbWPYCluJP_CkQ4u5ZEdKs3jyNRruDDoZAwJJUXJth6tG_7mPX3aQcmPkyT_SplAvni06XY_CZTvlDtmMKmnK2fumhBUfJKWt4fkffNAhlJUcIgnEOiYcQ0B_crNGoQk9jS0ggZvXO1IKqJcjNaxAlVfqXHlbxs-5qHV8JYkMK)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNo1jjsOgzAQRK-CtoYLGClNko4C4ZTbWPYCluJP_CkQ4u5ZEdKs3jyNRruDDoZAwJJUXJth6tG_7mPX3aQcmPkyT_SplAvni06XY_CZTvlDtmMKmnK2fumhBUfJKWt4fkffNAhlJUcIgnEOiYcQ0B_crNGoQk9jS0ggZvXO1IKqJcjNaxAlVfqXHlbxs-5qHV8JYkMK)
 
-使用 [HTTP2](real-time#http2) 只需要建立一次 TCP 的連線，並且速度更快。
+	使用 [HTTP2](../real-time.md#http2) 只需要建立一次 TCP 的連線，並且速度更快。
 	
-[![](https://mermaid.ink/img/pako:eNo1j7sOgzAMRX8l8gw_EKQupRuqEFTqkiUlBiI1Ds1jqBD_XrfQxTr3-sqPFQZvECRMQS-zaLpKUcyPXd1nJDHaEJNI1qGi-tqX5el2bjnFlbnvG2auzB2-MsbEGskoOuSvERdPEauvuSO7bfADxmhpqqAAh8Fpa_iSVZEQCtKMvBIk4-gDD1KgaONkXoxOeDE2-QBy1M-IBeicfP-mAWQKGf-h2mr-xB2p7QPiWVJj)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNo1j7sOgzAMRX8l8gw_EKQupRuqEFTqkiUlBiI1Ds1jqBD_XrfQxTr3-sqPFQZvECRMQS-zaLpKUcyPXd1nJDHaEJNI1qGi-tqX5el2bjnFlbnvG2auzB2-MsbEGskoOuSvERdPEauvuSO7bfADxmhpqqAAh8Fpa_iSVZEQCtKMvBIk4-gDD1KgaONkXoxOeDE2-QBy1M-IBeicfP-mAWQKGf-h2mr-xB2p7QPiWVJj)
+	[![](https://mermaid.ink/img/pako:eNo1j7sOgzAMRX8l8gw_EKQupRuqEFTqkiUlBiI1Ds1jqBD_XrfQxTr3-sqPFQZvECRMQS-zaLpKUcyPXd1nJDHaEJNI1qGi-tqX5el2bjnFlbnvG2auzB2-MsbEGskoOuSvERdPEauvuSO7bfADxmhpqqAAh8Fpa_iSVZEQCtKMvBIk4-gDD1KgaONkXoxOeDE2-QBy1M-IBeicfP-mAWQKGf-h2mr-xB2p7QPiWVJj)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNo1j7sOgzAMRX8l8gw_EKQupRuqEFTqkiUlBiI1Ds1jqBD_XrfQxTr3-sqPFQZvECRMQS-zaLpKUcyPXd1nJDHaEJNI1qGi-tqX5el2bjnFlbnvG2auzB2-MsbEGskoOuSvERdPEauvuSO7bfADxmhpqqAAh8Fpa_iSVZEQCtKMvBIk4-gDD1KgaONkXoxOeDE2-QBy1M-IBeicfP-mAWQKGf-h2mr-xB2p7QPiWVJj)
 
-[![](https://mermaid.ink/img/pako:eNo1jjsKwzAQBa9itrYvIEOqpEsRlHabRVrbgmilrKQiGN89Ip9ueAzD28Elz2BgVcrbcLUziuVn41Kn6WS55CSFP-MX-3rT5LiUIOsMI0TWSMH3xI4yDAh148gIpuOStIcQUI5utuyp8sWHmhTMQo_CI1Cr6f4SB6Zq4790DtQPxZ91vAHCUToc)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNo1jjsKwzAQBa9itrYvIEOqpEsRlHabRVrbgmilrKQiGN89Ip9ueAzD28Elz2BgVcrbcLUziuVn41Kn6WS55CSFP-MX-3rT5LiUIOsMI0TWSMH3xI4yDAh148gIpuOStIcQUI5utuyp8sWHmhTMQo_CI1Cr6f4SB6Zq4790DtQPxZ91vAHCUToc)
+	[![](https://mermaid.ink/img/pako:eNo1jjsKwzAQBa9itrYvIEOqpEsRlHabRVrbgmilrKQiGN89Ip9ueAzD28Elz2BgVcrbcLUziuVn41Kn6WS55CSFP-MX-3rT5LiUIOsMI0TWSMH3xI4yDAh148gIpuOStIcQUI5utuyp8sWHmhTMQo_CI1Cr6f4SB6Zq4790DtQPxZ91vAHCUToc)](https://mermaid-js.github.io/mermaid-live-editor/edit#pako:eNo1jjsKwzAQBa9itrYvIEOqpEsRlHabRVrbgmilrKQiGN89Ip9ueAzD28Elz2BgVcrbcLUziuVn41Kn6WS55CSFP-MX-3rT5LiUIOsMI0TWSMH3xI4yDAh148gIpuOStIcQUI5utuyp8sWHmhTMQo_CI1Cr6f4SB6Zq4790DtQPxZ91vAHCUToc)
 
 
 2. Caching Request
