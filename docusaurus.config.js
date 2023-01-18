@@ -59,7 +59,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'about-digital-garden',
             position: 'left',
             label: 'Digital Garden',
           },

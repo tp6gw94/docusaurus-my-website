@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-title: Intro
+title: About digital garden
 ---
 
 About [Digital Garden](https://maggieappleton.com/garden-history).
