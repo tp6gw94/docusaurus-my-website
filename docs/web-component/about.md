@@ -1,6 +1,5 @@
 ---
 title: About
-draft: true
 sidebar_position: 1
 ---
 
