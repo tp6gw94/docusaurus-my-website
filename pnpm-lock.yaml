@@ -3,6 +3,7 @@ lockfileVersion: 5.4
 specifiers:
   '@docusaurus/core': 2.1.0
   '@docusaurus/module-type-aliases': 2.1.0
+  '@docusaurus/plugin-google-gtag': ^2.2.0
   '@docusaurus/preset-classic': 2.1.0
   '@docusaurus/types': ^2.2.0
   '@mdx-js/react': ^1.6.22
@@ -23,6 +24,7 @@ specifiers:
 
 dependencies:
   '@docusaurus/core': 2.1.0_aeigrxhfhc4abyd45ix2hknizy
+  '@docusaurus/plugin-google-gtag': 2.2.0_wfh3mw2ke2bdr53qfq544ltemu
   '@docusaurus/preset-classic': 2.1.0_bsafmusoukf4e6aet6onn76mra
   '@mdx-js/react': 1.6.22_react@17.0.2
   '@stackblitz/sdk': 1.8.1
@@ -1751,6 +1753,106 @@ packages:
       - webpack-cli
     dev: false
 
+  /@docusaurus/core/2.2.0_aeigrxhfhc4abyd45ix2hknizy:
+    resolution: {integrity: sha512-Vd6XOluKQqzG12fEs9prJgDtyn6DPok9vmUWDR2E6/nV5Fl9SVkhEQOBxwObjk3kQh7OY7vguFaLh0jqdApWsA==}
+    engines: {node: '>=16.14'}
+    hasBin: true
+    peerDependencies:
+      react: ^16.8.4 || ^17.0.0
+      react-dom: ^16.8.4 || ^17.0.0
+    dependencies:
+      '@babel/core': 7.20.5
+      '@babel/generator': 7.20.5
+      '@babel/plugin-syntax-dynamic-import': 7.8.3_@babel+core@7.20.5
+      '@babel/plugin-transform-runtime': 7.19.6_@babel+core@7.20.5
+      '@babel/preset-env': 7.20.2_@babel+core@7.20.5
+      '@babel/preset-react': 7.18.6_@babel+core@7.20.5
+      '@babel/preset-typescript': 7.18.6_@babel+core@7.20.5
+      '@babel/runtime': 7.20.6
+      '@babel/runtime-corejs3': 7.20.6
+      '@babel/traverse': 7.20.5
+      '@docusaurus/cssnano-preset': 2.2.0
+      '@docusaurus/logger': 2.2.0
+      '@docusaurus/mdx-loader': 2.2.0_zneentkx4scexj4pzosurqq55y
+      '@docusaurus/react-loadable': 5.5.2_react@17.0.2
+      '@docusaurus/utils': 2.2.0_@docusaurus+types@2.2.0
+      '@docusaurus/utils-common': 2.2.0_@docusaurus+types@2.2.0
+      '@docusaurus/utils-validation': 2.2.0_@docusaurus+types@2.2.0
+      '@slorber/static-site-generator-webpack-plugin': 4.0.7
+      '@svgr/webpack': 6.5.1
+      autoprefixer: 10.4.13_postcss@8.4.19
+      babel-loader: 8.3.0_ztqwsvkb6z73luspkai6ilstpu
+      babel-plugin-dynamic-import-node: 2.3.3
+      boxen: 6.2.1
+      chalk: 4.1.2
+      chokidar: 3.5.3
+      clean-css: 5.3.1
+      cli-table3: 0.6.3
+      combine-promises: 1.1.0
+      commander: 5.1.0
+      copy-webpack-plugin: 11.0.0_webpack@5.75.0
+      core-js: 3.26.1
+      css-loader: 6.7.2_webpack@5.75.0
+      css-minimizer-webpack-plugin: 4.2.2_2xq5u4vuzw4op42d4uqzx2gxfa
+      cssnano: 5.1.14_postcss@8.4.19
+      del: 6.1.1
+      detect-port: 1.5.1
+      escape-html: 1.0.3
+      eta: 1.12.3
+      file-loader: 6.2.0_webpack@5.75.0
+      fs-extra: 10.1.0
+      html-minifier-terser: 6.1.0
+      html-tags: 3.2.0
+      html-webpack-plugin: 5.5.0_webpack@5.75.0
+      import-fresh: 3.3.0
+      leven: 3.1.0
+      lodash: 4.17.21
+      mini-css-extract-plugin: 2.7.0_webpack@5.75.0
+      postcss: 8.4.19
+      postcss-loader: 7.0.1_upg3rk2kpasnbk27hkqapxaxfq
+      prompts: 2.4.2
+      react: 17.0.2
+      react-dev-utils: 12.0.1_vfotqvx6lgcbf3upbs6hgaza4q
+      react-dom: 17.0.2_react@17.0.2
+      react-helmet-async: 1.3.0_sfoxds7t5ydpegc3knd667wn6m
+      react-loadable: /@docusaurus/react-loadable/5.5.2_react@17.0.2
+      react-loadable-ssr-addon-v5-slorber: 1.0.1_pwfl7zyferpbeh35vaepqxwaky
+      react-router: 5.3.4_react@17.0.2
+      react-router-config: 5.1.1_2dl5roaqnyqqppnjni7uetnb3a
+      react-router-dom: 5.3.4_react@17.0.2
+      rtl-detect: 1.0.4
+      semver: 7.3.8
+      serve-handler: 6.1.5
+      shelljs: 0.8.5
+      terser-webpack-plugin: 5.3.6_webpack@5.75.0
+      tslib: 2.4.1
+      update-notifier: 5.1.0
+      url-loader: 4.1.1_p5dl6emkcwslbw72e37w4ug7em
+      wait-on: 6.0.1
+      webpack: 5.75.0
+      webpack-bundle-analyzer: 4.7.0
+      webpack-dev-server: 4.11.1_webpack@5.75.0
+      webpack-merge: 5.8.0
+      webpackbar: 5.0.2_webpack@5.75.0
+    transitivePeerDependencies:
+      - '@docusaurus/types'
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - lightningcss
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+    dev: false
+
   /@docusaurus/cssnano-preset/2.1.0:
     resolution: {integrity: sha512-pRLewcgGhOies6pzsUROfmPStDRdFw+FgV5sMtLr5+4Luv2rty5+b/eSIMMetqUsmg3A9r9bcxHk9bKAKvx3zQ==}
     engines: {node: '>=16.14'}
@@ -1761,8 +1863,26 @@ packages:
       tslib: 2.4.1
     dev: false
 
+  /@docusaurus/cssnano-preset/2.2.0:
+    resolution: {integrity: sha512-mAAwCo4n66TMWBH1kXnHVZsakW9VAXJzTO4yZukuL3ro4F+JtkMwKfh42EG75K/J/YIFQG5I/Bzy0UH/hFxaTg==}
+    engines: {node: '>=16.14'}
+    dependencies:
+      cssnano-preset-advanced: 5.3.9_postcss@8.4.19
+      postcss: 8.4.19
+      postcss-sort-media-queries: 4.3.0_postcss@8.4.19
+      tslib: 2.4.1
+    dev: false
+
   /@docusaurus/logger/2.1.0:
     resolution: {integrity: sha512-uuJx2T6hDBg82joFeyobywPjSOIfeq05GfyKGHThVoXuXsu1KAzMDYcjoDxarb9CoHCI/Dor8R2MoL6zII8x1Q==}
+    engines: {node: '>=16.14'}
+    dependencies:
+      chalk: 4.1.2
+      tslib: 2.4.1
+    dev: false
+
+  /@docusaurus/logger/2.2.0:
+    resolution: {integrity: sha512-DF3j1cA5y2nNsu/vk8AG7xwpZu6f5MKkPPMaaIbgXLnWGfm6+wkOeW7kNrxnM95YOhKUkJUophX69nGUnLsm0A==}
     engines: {node: '>=16.14'}
     dependencies:
       chalk: 4.1.2
@@ -1815,6 +1935,41 @@ packages:
       '@babel/traverse': 7.20.5
       '@docusaurus/logger': 2.1.0
       '@docusaurus/utils': 2.1.0_@docusaurus+types@2.2.0
+      '@mdx-js/mdx': 1.6.22
+      escape-html: 1.0.3
+      file-loader: 6.2.0_webpack@5.75.0
+      fs-extra: 10.1.0
+      image-size: 1.0.2
+      mdast-util-to-string: 2.0.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      remark-emoji: 2.2.0
+      stringify-object: 3.3.0
+      tslib: 2.4.1
+      unified: 9.2.2
+      unist-util-visit: 2.0.3
+      url-loader: 4.1.1_p5dl6emkcwslbw72e37w4ug7em
+      webpack: 5.75.0
+    transitivePeerDependencies:
+      - '@docusaurus/types'
+      - '@swc/core'
+      - esbuild
+      - supports-color
+      - uglify-js
+      - webpack-cli
+    dev: false
+
+  /@docusaurus/mdx-loader/2.2.0_zneentkx4scexj4pzosurqq55y:
+    resolution: {integrity: sha512-X2bzo3T0jW0VhUU+XdQofcEeozXOTmKQMvc8tUnWRdTnCvj4XEcBVdC3g+/jftceluiwSTNRAX4VBOJdNt18jA==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      react: ^16.8.4 || ^17.0.0
+      react-dom: ^16.8.4 || ^17.0.0
+    dependencies:
+      '@babel/parser': 7.20.5
+      '@babel/traverse': 7.20.5
+      '@docusaurus/logger': 2.2.0
+      '@docusaurus/utils': 2.2.0_@docusaurus+types@2.2.0
       '@mdx-js/mdx': 1.6.22
       escape-html: 1.0.3
       file-loader: 6.2.0_webpack@5.75.0
@@ -2058,6 +2213,37 @@ packages:
       '@docusaurus/core': 2.1.0_b6oat7ymeweildf5befascqexu
       '@docusaurus/types': 2.1.0_sfoxds7t5ydpegc3knd667wn6m
       '@docusaurus/utils-validation': 2.1.0_@docusaurus+types@2.1.0
+      react: 17.0.2
+      react-dom: 17.0.2_react@17.0.2
+      tslib: 2.4.1
+    transitivePeerDependencies:
+      - '@parcel/css'
+      - '@swc/core'
+      - '@swc/css'
+      - bufferutil
+      - csso
+      - debug
+      - esbuild
+      - eslint
+      - lightningcss
+      - supports-color
+      - typescript
+      - uglify-js
+      - utf-8-validate
+      - vue-template-compiler
+      - webpack-cli
+    dev: false
+
+  /@docusaurus/plugin-google-gtag/2.2.0_wfh3mw2ke2bdr53qfq544ltemu:
+    resolution: {integrity: sha512-6SOgczP/dYdkqUMGTRqgxAS1eTp6MnJDAQMy8VCF1QKbWZmlkx4agHDexihqmYyCujTYHqDAhm1hV26EET54NQ==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      react: ^16.8.4 || ^17.0.0
+      react-dom: ^16.8.4 || ^17.0.0
+    dependencies:
+      '@docusaurus/core': 2.2.0_aeigrxhfhc4abyd45ix2hknizy
+      '@docusaurus/types': 2.2.0_sfoxds7t5ydpegc3knd667wn6m
+      '@docusaurus/utils-validation': 2.2.0_@docusaurus+types@2.2.0
       react: 17.0.2
       react-dom: 17.0.2_react@17.0.2
       tslib: 2.4.1
@@ -2384,6 +2570,19 @@ packages:
       tslib: 2.4.1
     dev: false
 
+  /@docusaurus/utils-common/2.2.0_@docusaurus+types@2.2.0:
+    resolution: {integrity: sha512-qebnerHp+cyovdUseDQyYFvMW1n1nv61zGe5JJfoNQUnjKuApch3IVsz+/lZ9a38pId8kqehC1Ao2bW/s0ntDA==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      '@docusaurus/types': '*'
+    peerDependenciesMeta:
+      '@docusaurus/types':
+        optional: true
+    dependencies:
+      '@docusaurus/types': 2.2.0_sfoxds7t5ydpegc3knd667wn6m
+      tslib: 2.4.1
+    dev: false
+
   /@docusaurus/utils-validation/2.1.0_@docusaurus+types@2.1.0:
     resolution: {integrity: sha512-AMJzWYKL3b7FLltKtDXNLO9Y649V2BXvrnRdnW2AA+PpBnYV78zKLSCz135cuWwRj1ajNtP4onbXdlnyvCijGQ==}
     engines: {node: '>=16.14'}
@@ -2408,6 +2607,24 @@ packages:
     dependencies:
       '@docusaurus/logger': 2.1.0
       '@docusaurus/utils': 2.1.0_@docusaurus+types@2.2.0
+      joi: 17.7.0
+      js-yaml: 4.1.0
+      tslib: 2.4.1
+    transitivePeerDependencies:
+      - '@docusaurus/types'
+      - '@swc/core'
+      - esbuild
+      - supports-color
+      - uglify-js
+      - webpack-cli
+    dev: false
+
+  /@docusaurus/utils-validation/2.2.0_@docusaurus+types@2.2.0:
+    resolution: {integrity: sha512-I1hcsG3yoCkasOL5qQAYAfnmVoLei7apugT6m4crQjmDGxq+UkiRrq55UqmDDyZlac/6ax/JC0p+usZ6W4nVyg==}
+    engines: {node: '>=16.14'}
+    dependencies:
+      '@docusaurus/logger': 2.2.0
+      '@docusaurus/utils': 2.2.0_@docusaurus+types@2.2.0
       joi: 17.7.0
       js-yaml: 4.1.0
       tslib: 2.4.1
@@ -2463,6 +2680,39 @@ packages:
         optional: true
     dependencies:
       '@docusaurus/logger': 2.1.0
+      '@docusaurus/types': 2.2.0_sfoxds7t5ydpegc3knd667wn6m
+      '@svgr/webpack': 6.5.1
+      file-loader: 6.2.0_webpack@5.75.0
+      fs-extra: 10.1.0
+      github-slugger: 1.5.0
+      globby: 11.1.0
+      gray-matter: 4.0.3
+      js-yaml: 4.1.0
+      lodash: 4.17.21
+      micromatch: 4.0.5
+      resolve-pathname: 3.0.0
+      shelljs: 0.8.5
+      tslib: 2.4.1
+      url-loader: 4.1.1_p5dl6emkcwslbw72e37w4ug7em
+      webpack: 5.75.0
+    transitivePeerDependencies:
+      - '@swc/core'
+      - esbuild
+      - supports-color
+      - uglify-js
+      - webpack-cli
+    dev: false
+
+  /@docusaurus/utils/2.2.0_@docusaurus+types@2.2.0:
+    resolution: {integrity: sha512-oNk3cjvx7Tt1Lgh/aeZAmFpGV2pDr5nHKrBVx6hTkzGhrnMuQqLt6UPlQjdYQ3QHXwyF/ZtZMO1D5Pfi0lu7SA==}
+    engines: {node: '>=16.14'}
+    peerDependencies:
+      '@docusaurus/types': '*'
+    peerDependenciesMeta:
+      '@docusaurus/types':
+        optional: true
+    dependencies:
+      '@docusaurus/logger': 2.2.0
       '@docusaurus/types': 2.2.0_sfoxds7t5ydpegc3knd667wn6m
       '@svgr/webpack': 6.5.1
       file-loader: 6.2.0_webpack@5.75.0
